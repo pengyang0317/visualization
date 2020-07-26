@@ -1,0 +1,72 @@
+
+.topview-style{
+    display: flex;
+    box-sizing: border-box;
+}
+.card-style{
+    flex: 1 1 25%;
+    width: 25%;
+    margin: 0 10px;
+    border: 1px solid #ebeef5;
+    background-color: #fff;
+    color: #303133;
+    transition: .3s;
+    border-radius: 4px;
+    overflow: hidden;
+    &:hover {
+        box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    }
+    .card-body{
+        padding: 20px;
+        .title{
+            font-size: 12px;
+            color: #999;
+        }
+        .value {
+            font-size: 25px;
+            color: #000;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+        .char-wrapper{
+            height: 50px;
+            font-size: 12px;
+            margin-top: 3px;
+            color: #666;
+            .rise{
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-width: 3px;
+                border-style: solid;
+                border-color: transparent transparent red transparent;
+                vertical-align: middle;
+                margin: 0 0 6px 6px;
+          
+            }
+            .decline {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-width: 3px;
+                border-style: solid;
+                border-color: green transparent transparent transparent;
+                vertical-align: middle;
+                margin: 0 0 0 6px;
+            }
+        }
+        .line{
+            margin: 10px 0;
+            border-top: 1px solid #eee;
+        }
+        .total {
+            color: #666;
+            font-size: 12px;
+            .emphasis {
+                color: #333;
+                margin-left: 5px;
+                font-weight: 700;
+            }
+        }
+    }
+}
